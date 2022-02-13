@@ -48,7 +48,8 @@ Kalendar supports both local calendars as well as a multitude of online calendar
 Kalendar gives you many ways to interact with your events. 
 The month view provides an overview of the entire month; the week view presents a detailed hour-by-hour overview of your week; 
 and the schedule view lists all of your upcoming events so that you can easily and quickly plan ahead.
-A tasks view is also available, making it possible for you to manage your tasks and subtasks with Kalendar's powerful tree view and its customisable filtering capabilities.
+A tasks view is also available, making it possible for you to manage your tasks and subtasks with Kalendar's powerful tree view 
+and its customisable filtering capabilities.
 Kalendar was built with the idea to be usable on desktop, on mobile and everything in between.
 
 %prep
@@ -65,3 +66,11 @@ Kalendar was built with the idea to be usable on desktop, on mobile and everythi
 %find_lang %{name} --with-man --all-name
 
 %files -f %{name}.lang
+%{_sysconfdir}/autostart/org.kde.kalendarac.desktop
+%{_bindir}/kalendar*
+%{_datadir}/applications/org.kde.kalendar.desktop
+%{_datadir}/dbus-1/services/org.kde.kalendarac.service
+%{_datadir}/knotifications5/kalendarac.notifyrc
+%{_datadir}/metainfo/org.kde.kalendar.appdata.xml
+%{_datadir}/qlogging-categories5/kalendar.categories
+%{_iconsdir}/hicolor/scalable/apps/org.kde.kalendar.svg
