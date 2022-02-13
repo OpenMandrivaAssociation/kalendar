@@ -32,6 +32,7 @@ BuildRequires:  cmake(Qt5Gui)
 BuildRequires:  cmake(Qt5Location)
 BuildRequires:  cmake(Qt5Qml)
 BuildRequires:  cmake(Qt5QuickControls2)
+BuildRequires:  cmake(Qt5QuickTest)
 BuildRequires:  cmake(Qt5Svg)
 
 Requires: kdepim-addons
