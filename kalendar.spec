@@ -66,7 +66,7 @@ Kalendar was built with the idea to be usable on desktop, on mobile and everythi
 %find_lang %{name} --with-man --all-name
 
 %files -f %{name}.lang
-%{_sysconfdir}/autostart/org.kde.kalendarac.desktop
+%{_sysconfdir}/xdg/autostart/org.kde.kalendarac.desktop
 %{_bindir}/kalendar*
 %{_datadir}/applications/org.kde.kalendar.desktop
 %{_datadir}/dbus-1/services/org.kde.kalendarac.service
