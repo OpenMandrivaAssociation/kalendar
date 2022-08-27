@@ -1,11 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Name:           kalendar
-Version:        1.0.0
+Version:        22.08.0
 Release:        1
 Summary:        Calendar Application
 Group:          Graphical desktop/KDE/Plasma5
 License:        GPL-3.0
 URL:            https://apps.kde.org/kalendar
-Source:         https://download.kde.org/stable/kalendar/%{name}-%{version}.tar.xz
+Source:         https://download.kde.org/%{stable}/release-service/%{version}/src/kalendar-%{version}.tar.xz
 
 BuildRequires:  cmake
 BuildRequires:  cmake(ECM)
@@ -66,11 +68,15 @@ Kalendar was built with the idea to be usable on desktop, on mobile and everythi
 %find_lang %{name} --with-man --all-name
 
 %files -f %{name}.lang
-%{_sysconfdir}/xdg/autostart/org.kde.kalendarac.desktop
 %{_bindir}/kalendar*
 %{_datadir}/applications/org.kde.kalendar.desktop
-%{_datadir}/dbus-1/services/org.kde.kalendarac.service
-%{_datadir}/knotifications5/kalendarac.notifyrc
 %{_datadir}/metainfo/org.kde.kalendar.appdata.xml
 %{_datadir}/qlogging-categories5/kalendar.categories
 %{_iconsdir}/hicolor/scalable/apps/org.kde.kalendar.svg
+%{_libdir}/qml/org/kde/akonadi
+%{_libdir}/qml/org/kde/kalendar
+%{_datadir}/kservices5/plasma-applet-org.kde.kalendar.contact.desktop
+%{_datadir}/metainfo/org.kde.kalendar.contact.appdata.xml
+%{_datadir}/plasma/plasmoids/org.kde.kalendar.contact
+%{_datadir}/qlogging-categories5/akonadi.quick.categories
+%{_datadir}/qlogging-categories5/kalendar.contact.categories
