@@ -2,7 +2,7 @@
 
 Name:           kalendar
 Version:        22.08.2
-Release:        1
+Release:        2
 Summary:        Calendar Application
 Group:          Graphical desktop/KDE/Plasma5
 License:        GPL-3.0
