@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name:           kalendar
-Version:        22.08.3
+Version:        22.12.0
 Release:        1
 Summary:        Calendar Application
 Group:          Graphical desktop/KDE/Plasma5
@@ -76,7 +76,6 @@ Kalendar was built with the idea to be usable on desktop, on mobile and everythi
 %{_iconsdir}/hicolor/scalable/apps/org.kde.kalendar.svg
 %{_libdir}/qml/org/kde/akonadi
 %{_libdir}/qml/org/kde/kalendar
-%{_datadir}/kservices5/plasma-applet-org.kde.kalendar.contact.desktop
 %{_datadir}/metainfo/org.kde.kalendar.contact.appdata.xml
 %{_datadir}/plasma/plasmoids/org.kde.kalendar.contact
 %{_datadir}/qlogging-categories5/akonadi.quick.categories
