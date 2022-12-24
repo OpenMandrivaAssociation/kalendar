@@ -37,6 +37,7 @@ BuildRequires:  cmake(Qt5Qml)
 BuildRequires:  cmake(Qt5QuickControls2)
 BuildRequires:  cmake(Qt5QuickTest)
 BuildRequires:  cmake(Qt5Svg)
+BuildRequires:	pkgconfig(gpgme)
 
 Requires: kdepim-addons
 Requires: kdepim-runtime
